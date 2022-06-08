@@ -627,6 +627,9 @@ Functions
    blocking reads on *source* (or the file it names).  As such, it's unsuitable
    for applications where blocking reads can't be made.  For fully non-blocking
    parsing, see :class:`XMLPullParser`.
+   
+   Once *source* is fully read, the returned :term:`iterator` object is populated with `root`
+   attribute which references to the root element of the resulting XML tree.
 
    .. note::
 
